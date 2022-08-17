@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800;900&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Exo 2', sans-serif;
+}
+:root {
+    --clr--jet:#333333;
+    --clr--default--font:#ffffff;
+    --background:var(--clr--jet);
+    --link--hover: rgb(35, 235, 125);
+    --submit: rgb(35, 235, 125);
+    --card: rgb(125, 125, 125);
+    --border--radius:5px;
+    --social--hover: rgb(35, 95, 235);
+}
+
+/* Authored By RK */
+/* 
+    TABLE OF CONTENTS:
+        1.0 
+            HEADER
+                1.1A
+                    Desktop
+                1.1B
+                    Mobile
+                1.2
+                    Responsive
+        2.0
+            BODY
+                1.1
+                    Our Message Section
+                1.2
+                    Slider?
+        3.0
+            FOOTER
+        5.0 
+            Components
+                1.1
+                    Card
+        6.0
+            Utility Classes
+
+*/
+
+/* 1.0 Header CSS */
+
+header {
+    color:var(--clr--default--font);
+    min-height:15vh;
+}
+
+header a {
+    color:var(--clr--default--font);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header nav .social {
+    background:var(--background);
+    display:flex;
+    gap: .5rem;
+}
+
+header nav .social a:hover {
+    color: var(--social--hover) !important;
+}
+
+/* 1.1A Desktop Nav */
+header nav.desktop {
+    display:flex;
+    flex:1;
+    align-items:center;
+    gap:3rem;
+    /* justify-content:space-between; */
+    width:90%;
+    max-width:1400px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 1rem .5rem;
+    font-size:1.25rem;
+    background: var(--background);
+}
+
+/* Handles Left And Right Nav Or Even More*/
+header nav.desktop > div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:2rem;
+}
+
+header nav.desktop #logo img {
+    max-width: 125px;
+}
+
+header nav.desktop a {
+    color:var(--clr--default--font);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header nav.desktop a:hover {
+    color:var(--link--hover);
+}
+
+/* 1.1B Mobile Nav */
+header nav.mobile {
+    display: block;
+}
+/* 1.2 Responsive */
+
+@media (max-width:679px) {
+    header nav.desktop {
+        display:none;
+    }
+}
+
+@media (min-width:680px) {
+    header nav.mobile {
+        display:none;
+    }
+}
+
+/* 2.0 Body */
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background:var(--background);
+}
+
+main {
+    min-height: 75vh;
+}
+
+/* 1.1 Our Message Section */
+
+#project-message {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* 1.2 Slider Section */
+
+#slider {
+    padding: 1rem 0;
+    max-width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#slider .swiper {
+    width: 450px;
+    /* height: 500px; */
+  }
+
+
+/* 3.0 Footer */
+
+footer {
+    display:block;
+    /* margin-bottom:1rem; */
+    padding:1rem 0;
+    text-align:center;
+    width: 100%;
+    color:var(--clr--default--font);
+}
+
+footer a {
+    text-decoration:none;
+    color:var(--clr--default--font);
+}
+
+footer a:hover {
+    color:var(--link--hover);
+}
+
+footer .bottom-footer {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    gap: 0 .5rem;
+}
+
+footer .bottom-footer img {
+    max-width:25px;
+}
+
+footer .social a:hover {
+    color: var(--social--hover) !important;
+}
+
+/* @media(max-width:680px) {
+    footer .bottom-footer{
+        flex-direction:column-reverse;
+        gap:.5rem;
+        font-size:1.15rem;
+    }
+    footer .bottom-footer span {
+        display:none;
+    }
+} */
+
+/* 5.0 Components */
+
+/* 1.1 Card */
+.card {
+    max-width: 300px;
+    background: var(--card);
+    color:var(--clr--default--font);
+    padding: 1rem;
+    border-radius: 5px;
+    line-height:1.5rem;
+    user-select: none;
+    transition: all 350ms ease;
+}
+
+.card h2 {
+    text-align: center;
+    padding-bottom:1rem;
+}
+
+
+/* 6.0 Utility Classes */
+
+.flex {
+    display:flex;
+}
+
+.full {
+    width:100%;
+}
+
+.half {
+    width:50%;
+}
+
+.third {
+    width:33%;
+}
+
+.quarter {
+    width:25%;
+}

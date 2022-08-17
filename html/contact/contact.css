@@ -1,0 +1,96 @@
+:root {
+    --input--size: 1.15rem;
+    --input--padding: .3rem;
+}
+
+main h1 {
+    color:white;
+}
+
+main .card {
+    margin: 0 auto 3rem auto;
+}
+
+#contact-form {
+    background:var(--card);
+    max-width:900px;
+    width:90%;
+    padding:2rem;
+    margin-left:auto;
+    margin-right:auto;
+    user-select: none;
+    border-radius:var(--border--radius);
+}
+
+#contact-form fieldset {
+    padding:2rem;
+    border-radius:var(--border--radius);
+    /* gap:1rem; */
+}
+
+#contact-form .form-element {
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    margin: 0 .25rem .25rem 0;
+}
+
+#contact-form input {
+    font-size: var(--input--size);
+    font-weight:600;
+    padding:var(--input--padding);
+}
+
+#contact-form textarea {
+    height: 6rem;
+    padding:var(--input--padding);
+    font-size:var(--input--size);
+}
+
+#contact-form select {
+    font-size: var(--input--size);
+    padding:var(--input--padding);
+}
+
+#contact-form span {
+    color:rgb(235, 35, 95);
+    font-weight:800;
+}
+
+#contact-form button[type=submit] {
+    padding:1rem;
+    font-size:var(--input--size);
+    margin-top:1rem;
+    background:rgb(19, 201, 71);
+    border:1px solid rgb(19, 201, 71);
+    border-radius:var(--border--radius);
+    transition: all 350ms ease;
+}
+
+#contact-form button[type=submit]:hover {
+    background:var(--submit);
+    cursor:pointer;
+}
+
+/* option[value]:checked {
+    background: var(--link--hover);
+} */
+
+@media(max-width:680px) {
+    #contact-form .mobile {
+        flex-direction:column;
+    }
+
+    #contact-form .mobile .form-element {
+        width:100%;
+    }
+}
+
+@media(max-width:680px) {
+    #contact-form fieldset {
+        padding: .5rem;
+    }
+    #contact-form form {
+        padding: .5rem;
+    }
+}
