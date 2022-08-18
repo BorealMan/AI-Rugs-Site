@@ -1,4 +1,5 @@
 <header>
+    <!-- Desktop Nav -->
     <nav class="desktop">
         <div class="left">
             <a id="logo" href="/"><img src='includes/images/airugs-logo.png' alt='AIRUGS LOGO' /></a>
@@ -12,5 +13,12 @@
             </div>
         </div>
     </nav>
-    <nav class="mobile">Mobile</nav>
+    <!-- Mobile Nav -->
+    <nav class="mobile">
+        <a id="logo" href="/"><img src='includes/images/airugs-logo.png' alt='AIRUGS LOGO' /></a>
+        <div id='mobile-burger-menu'><i class="fa-solid fa-bars"></i></div>
+        <div class='mobile '>
+
+        </div>
+    </nav>
 </header>

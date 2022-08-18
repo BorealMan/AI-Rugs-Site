@@ -1,7 +1,7 @@
 <?php
 $root = '../'; // $_SEVER['DOCUMENT_ROOT'];
 include_once($root . 'includes/assets/head.php') ?>
-<title>Official AIRUGS</title>
+<title>CONTACT | Official AIRUGS</title>
 <link rel="stylesheet" href="/contact/contact.css">
 </head>
 

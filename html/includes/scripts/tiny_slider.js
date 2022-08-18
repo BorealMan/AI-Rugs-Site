@@ -6,7 +6,7 @@ var slider = new tns({
   slideBy: 'page',
   mode: "carousel",
   gutter: 20,
-  edgePadding: 20,
+  edgePadding: 0,
   center:false,
   autoWidth: false,
   fixedWidth: false,
