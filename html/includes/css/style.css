@@ -156,6 +156,14 @@ main {
     /* height: 500px; */
   }
 
+#slider .project-images {
+    /* width:450px; */
+}
+
+#slider .project-images img:hover {
+    /* max-width:250px; */
+    cursor:pointer;
+}
 
 /* 3.0 Footer */
 

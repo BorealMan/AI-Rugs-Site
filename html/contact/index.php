@@ -18,12 +18,12 @@ include_once($root . 'includes/assets/head.php') ?>
             <fieldset>
                 <div class="flex mobile">
                     <div class="form-element half">
-                        <label for='firstname'>Firstname<span> *</span></label>
-                        <input name='firstname' type='text' placeholder="Firstname..." required></input>
+                        <label for='firstname'>Firstname</label>
+                        <input name='firstname' type='text' placeholder="Firstname..."></input>
                     </div>
                     <div class="form-element half">
-                        <label for='lastname'>Lastname<span> *</span></label>
-                        <input name='lastname' type='text' placeholder="Lastname..." required></input>
+                        <label for='lastname'>Lastname</label>
+                        <input name='lastname' type='text' placeholder="Lastname..."></input>
                     </div>
                 </div>
                 <div class="form-element full">

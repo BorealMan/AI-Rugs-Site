@@ -19,27 +19,15 @@ include_once($root . 'includes/assets/head.php') ?>
 
         <section id="slider">
 
-
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <?php
-                    $images = glob('includes/images/featured_rugs/*.png');
-                    foreach ($images as $filename) {
-                        echo '<div class="swiper-slide"><img src="' . $filename . '" alt="test" /></div>';
-                    }
-                    ?>
-                    ...
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+            <div class="project-images">
+                <?php
+                $images = glob('includes/images/featured_rugs/*.png');
+                foreach ($images as $filename) {
+                    echo '<img src="' . $filename . '" alt="test" />';
+                }
+                ?>
             </div>
         </section>
 
-        <script type="module">
-
-        </script>
     </main>
     <?php include_once($root . 'includes/assets/footer.php') ?>

@@ -15,8 +15,11 @@
         </div>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
 <script src="includes/scripts/slick_slider.js"></script>
+<script src="includes/scripts/tiny_slider.js"></script>
 </body>
 
 </html>
