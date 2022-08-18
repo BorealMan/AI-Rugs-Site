@@ -1,12 +1,11 @@
 <?php
-$root = '../'; // $_SEVER['DOCUMENT_ROOT'];
-include_once($root . 'includes/assets/head.php') ?>
+include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
 <title>SITEMAP | Official AIRUGS</title>
-<link rel="stylesheet" href="/sitemap/sitemap.css">
+<link rel="stylesheet" href="sitemap.css">
 </head>
 
 <body>
-    <?php include_once($root . 'includes/assets/header.php') ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/header.php') ?>
     <main>
         <h2>Site Map</h2>
         <ul>
@@ -19,4 +18,4 @@ include_once($root . 'includes/assets/head.php') ?>
         </ul>
     </main>
 
-    <?php include_once($root . 'includes/assets/footer.php') ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/footer.php') ?>

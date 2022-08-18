@@ -13,7 +13,8 @@ var slider = new tns({
   mouseDrag: true,
   swipeAngle: 15,
   loop: true,
-  speed: 250,
+  speed: 300,
+  autoplayTimeout: 5000,
   nav: false,
   slideBy: 1,
   controls:false,
@@ -22,6 +23,7 @@ var slider = new tns({
   autoplayButtonOutput: false,
   lazyload: false,
   preventScrollOnTouch: 'auto',
+  startIndex: 5,
   responsive: {
     0: {
       items:1

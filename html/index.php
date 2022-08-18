@@ -1,11 +1,11 @@
 <?php
-$root = $_SEVER['DOCUMENT_ROOT'];
-include_once($root . 'includes/assets/head.php') ?>
+
+include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
 <title>Official AIRUGS</title>
 </head>
 
 <body>
-    <?php include_once($root . 'includes/assets/header.php') ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/header.php') ?>
     <main>
         <section id="project-message">
             <div class="card">
@@ -21,7 +21,8 @@ include_once($root . 'includes/assets/head.php') ?>
             <div class='slider-container'>
                 <div class="project-images">
                     <?php
-                    $images = glob('includes/images/featured_rugs/*.png');
+                    $path = 'includes/images/featured_rugs/*.png';
+                    $images = glob($path);
                     foreach ($images as $filename) {
                         echo '<img src="' . $filename . '" alt="test" />';
                     }
@@ -34,4 +35,4 @@ include_once($root . 'includes/assets/head.php') ?>
     <!-- Tiny Slider Code -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="includes/scripts/tiny_slider.js"></script>
-    <?php include_once($root . 'includes/assets/footer.php') ?>
+    <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/footer.php') ?>
