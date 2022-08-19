@@ -18,11 +18,11 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
                 <div class="flex mobile">
                     <div class="form-element half">
                         <label for='firstname'>Firstname</label>
-                        <input name='firstname' type='text' placeholder="Firstname..."></input>
+                        <input name='firstname' type='text' placeholder="Firstname..." maxlength='32' pattern="^[A-Za-z]*$"></input>
                     </div>
                     <div class="form-element half">
                         <label for='lastname'>Lastname</label>
-                        <input name='lastname' type='text' placeholder="Lastname..."></input>
+                        <input name='lastname' type='text' placeholder="Lastname..." maxlength='32' pattern="^[A-Za-z]*$"></input>
                     </div>
                 </div>
                 <div class="form-element full">
@@ -32,14 +32,14 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
                 <div class="form-element full">
                     <label for='interest'>Interest<span> *</span></label>
                     <select name='interest'>
-                        <option value='whitelist'>Get On White List</option>
-                        <option value='collab'>Collab</option>
-                        <option value='other'>Other</option>
+                        <option value='Whitelist'>Get On White List</option>
+                        <option value='Collab'>Collab</option>
+                        <option value='Other'>Other</option>
                     </select>
                 </div>
                 <div class="form-element full">
                     <label for='message'>Message<span> *</span></label>
-                    <textarea class="message" name="message" type='text' placeholder="Message" required></textarea>
+                    <textarea class="message" name="message" type='text' placeholder="Message" required maxlength="500" minlength="12"></textarea>
                 </div>
                 <button type='submit'>Submit</button>
             </fieldset>

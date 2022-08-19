@@ -1,3 +1,4 @@
+<?php error_log($_SERVER['REMOTE_ADDR'] . ' | GET | ' . $_SERVER['REQUEST_URI']); ?>
 <!DOCTYPE html>
 <html lang="en">
 
