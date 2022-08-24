@@ -2,12 +2,27 @@
 include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
 <title>MINT | Official AIRUGS</title>
 <link rel='stylesheet' src='mint.css'>
-<script src='mint.js' type='text/javascript' defer></script>
 </head>
+
 
 <body>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/header.php') ?>
-    <main class='center-piece'>
-        <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/components/coming-soon.php'); ?>
+    <main>
+        <?php
+        // Switch Component Served Based On Time
+        // Event Date
+
+        // If Passed Date Server Mint
+
+        // Else Serve PreMint
+        echo '';
+        ?>
+
+        <?php //include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/components/coming-soon.php'); 
+        ?>
+        <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/mint/components/premint.php');
+        ?>
+        <?php // include_once($_SERVER['DOCUMENT_ROOT'] . '/mint/components/mint.php');
+        ?>
     </main>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/footer.php') ?>

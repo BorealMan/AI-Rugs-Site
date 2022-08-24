@@ -285,5 +285,9 @@ footer .social a:hover {
 .center-piece {
     display:flex;
     justify-content:center;
-    align-items: center;
+    align-items:center;
+}
+
+.textcenter {
+    text-align:center;
 }
