@@ -11,7 +11,7 @@
     <meta name="author" content="RK" />
     <meta name="description" content="AIRUGS is a new and upcoming Ai Art NFT Project." />
 
-    <link rel="stylesheet" href="/includes/css/style.css">
+    <link rel="stylesheet" href="/includes/css/style.css?v1">
     <link rel="shortcut icon" href="/includes/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 

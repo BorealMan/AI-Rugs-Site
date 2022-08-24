@@ -15,7 +15,6 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
         // If Passed Date Server Mint
 
         // Else Serve PreMint
-        echo '';
         ?>
 
         <?php //include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/components/coming-soon.php'); 

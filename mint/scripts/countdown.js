@@ -50,12 +50,12 @@ class CountDownTimer {
         return (`
             <div class='countdowntimer-display'>
                 <div class='countdowntimer-content'>
-                    ${diff.months > 0 ? `<p>${diff.months} Month${diff.months > 1 ? 's' : ''}</p>` : ''}
-                    ${diff.weeks > 0 ? `<p>${diff.weeks} Week${diff.weeks > 1 ? 's' : ''}</p>` : ''}
-                    ${diff.days > 0 ? `<p>${diff.days} Day${diff.days > 1 ? 's' : ''}</p>` : ''}
-                    ${diff.hours > 0 ? `<p>${diff.hours} Hour${diff.hours > 1 ? 's' : ''}</p>` : ''}
-                    ${diff.mins > 0 ? `<p>${diff.mins} Min${diff.mins > 1 ? 's' : ''}</p>` : ''}
-                    <p>${diff.secs} Sec${diff.secs > 1 ? 's' : ''}</p>
+                    ${diff.months > 0 ? `<p>${diff.months} Month${diff.months != 1 ? 's' : ''}</p>` : ''}
+                    ${diff.weeks > 0 ? `<p>${diff.weeks} Week${diff.weeks != 1 ? 's' : ''}</p>` : ''}
+                    ${diff.days > 0 ? `<p>${diff.days} Day${diff.days != 1 ? 's' : ''}</p>` : ''}
+                    ${diff.hours > 0 ? `<p>${diff.hours} Hour${diff.hours != 1 ? 's' : ''}</p>` : ''}
+                    ${diff.mins > 0 ? `<p>${diff.mins} Min${diff.mins != 1 ? 's' : ''}</p>` : ''}
+                    <p>${diff.secs} Sec${diff.secs != 1 ? 's' : ''}</p>
                 </div>
             </div>
         `);
