@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="robots" content="noindex" />
+    <meta name="robots" content="index, follow" />
     <meta name="author" content="RK" />
     <meta name="description" content="AIRUGS is a new and upcoming Ai Art NFT Project." />
+    <meta name="og:title" content="Official AIRUGS" />
+    <meta name="og:description" content="AIRUGS is a new and upcoming Ai Art NFT Project." />
 
     <link rel="stylesheet" href="/includes/css/style.css?v1">
     <link rel="shortcut icon" href="/includes/favicon.ico" type="image/x-icon">

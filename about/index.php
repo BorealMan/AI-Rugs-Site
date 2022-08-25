@@ -9,3 +9,5 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
         <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/components/coming-soon.php'); ?>
     </main>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/footer.php') ?>
+
+    <?php http_response_code(200); ?>

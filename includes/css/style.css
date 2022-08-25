@@ -14,6 +14,7 @@
     --card: rgb(125, 125, 125);
     --border--radius:5px;
     --social--hover: rgb(35, 95, 235);
+    --social--hover2: #1A8CD8;
 }
 
 /* Authored By RK */
@@ -52,6 +53,14 @@ h1,h2,h3,h4,h5,h6,p {
     font-family:'Exo 2';
 }
 
+a {
+    color:var(--clr--default--font);
+}
+
+a:hover {
+    color:var(--link--hover);
+}
+
 /* 1.0 Header CSS */
 
 header {
@@ -73,7 +82,7 @@ header nav .social {
 }
 
 header nav .social a:hover {
-    color: var(--social--hover) !important;
+    color: var(--social--hover2) !important;
 }
 
 /* 1.1A Desktop Nav */
@@ -128,17 +137,50 @@ header nav.mobile #logo img {
     transform:translateX(-50%);
 }
 
+header nav.mobile #mobile-burger-menu:hover,
+header nav.mobile #mobile-close-menu:hover {
+    cursor:pointer;
+}
+
+header nav.mobile #mobile-close-menu,
+header nav.mobile.active #mobile-burger-menu,
+header nav .left-side-menu {
+    display:none;
+}
+
+header nav.mobile.active #mobile-close-menu,
 header nav.mobile #mobile-burger-menu {
+    display:block;
     font-size: 2.5rem;
     color:var(--clr--default--font);
     position:absolute;
     right:1.5rem;
     top: 1rem;
+    translate: all 350ms ease;
 }
 
-header nav.mobile #mobile-burger-menu:hover {
-    cursor:pointer;
+header nav.mobile.active .left-side-menu {
+    display:flex;
+    position:absolute;
+    top:0;
+    bottom:0;  
+    z-index:10;
+    width: max(60%, 200px);
+    background: rgb(48, 48, 48, .95);
+    flex-direction: column;
+    align-items: center;
+    padding: 20% 1rem 1rem 1rem;
+    font-size: 2rem;
 }
+
+header nav.mobile.active .left-side-menu a {
+    margin-bottom:1em;
+}
+
+header nav.mobile .left-side-menu .social a:hover {
+    color: var(--social--hover2) !important;
+}
+
 
 /* 1.2 Responsive */
 
@@ -198,7 +240,7 @@ main {
 footer {
     display:block;
     /* margin-bottom:1rem; */
-    padding:1rem 0;
+    padding:1rem .25rem;
     text-align:center;
     width: 100%;
     color:var(--clr--default--font);
@@ -226,7 +268,7 @@ footer .bottom-footer img {
 }
 
 footer .social a:hover {
-    color: var(--social--hover) !important;
+    color: var(--social--hover2) !important;
 }
 
 /* @media(max-width:680px) {

@@ -36,3 +36,5 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="includes/scripts/tiny_slider.js"></script>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/footer.php') ?>
+
+    <?php http_response_code(200); ?>

@@ -95,4 +95,5 @@ if ($sucess) {
 }
 
 // Redirect
+http_response_code(201);
 header('Location: /contact/thank-you.php');
