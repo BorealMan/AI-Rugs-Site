@@ -1,0 +1,28 @@
+
+
+#mint {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-top: max(1%, 8px);
+}
+
+#mint-button {
+    padding: 1rem 1.5rem; 
+    text-align: center;
+    font-size:2rem;
+    font-weight:700;
+    /* background: rgb(240,31,31); */
+    background: rgb(15, 224, 224);
+    color:var(--clr--default--font);
+    border:1px solid var(--clr--jet);
+    border-radius:5px;
+    margin-top: 2rem;
+    transition: all 450ms ease;
+}
+
+#mint-button:hover {
+    cursor: pointer;
+    background:#30eb00;
+}

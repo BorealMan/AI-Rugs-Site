@@ -19,9 +19,9 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
 
         <?php //include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/components/coming-soon.php'); 
         ?>
-        <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/mint/components/premint.php');
+        <?php // include_once($_SERVER['DOCUMENT_ROOT'] . '/mint/components/premint.php');
         ?>
-        <?php // include_once($_SERVER['DOCUMENT_ROOT'] . '/mint/components/mint.php');
+        <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/mint/components/mint.php');
         ?>
     </main>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/footer.php') ?>
