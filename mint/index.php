@@ -4,22 +4,6 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
 <link rel='stylesheet' src='mint.css'>
 </head>
 
-<?php
-
-function DateTimeDiffToSeconds($diff)
-{
-    $days = $diff['d'] * 3600 * 24;
-    $hours = $diff['h'] * 3600;
-    $minutes = $diff['m'] * 60;
-    $seconds = $diff['s'];
-
-    $total = $days + $hours + $minutes + $seconds;
-    return $total;
-}
-
-?>
-
-
 <body>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/header.php') ?>
     <main>
