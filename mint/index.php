@@ -4,6 +4,21 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
 <link rel='stylesheet' src='mint.css'>
 </head>
 
+<?php
+
+function DateTimeDiffToSeconds($diff)
+{
+    $days = $diff['d'] * 3600 * 24;
+    $hours = $diff['h'] * 3600;
+    $minutes = $diff['m'] * 60;
+    $seconds = $diff['s'];
+
+    $total = $days + $hours + $minutes + $seconds;
+    return $total;
+}
+
+?>
+
 
 <body>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/header.php') ?>
@@ -11,18 +26,18 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/head.php') ?>
         <?php
         // Switch Component Served Based On Time
         // Event Date
+        $launchTime = new DateTime('2022-08-31 17:00:00');
+        $now = new DateTime();
 
-        // If Passed Date Server Mint
+        $diff = $launchTime->getTimestamp() - $now->getTimestamp();
 
-        // Else Serve PreMint
+        if ($diff <= 0) {
+            include_once($_SERVER['DOCUMENT_ROOT'] . '/mint/components/mint.php');
+        } else {
+            include_once($_SERVER['DOCUMENT_ROOT'] . '/mint/components/premint.php');
+        }
         ?>
 
-        <?php //include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/components/coming-soon.php'); 
-        ?>
-        <?php // include_once($_SERVER['DOCUMENT_ROOT'] . '/mint/components/premint.php');
-        ?>
-        <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/mint/components/mint.php');
-        ?>
     </main>
     <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/includes/assets/footer.php') ?>
 
